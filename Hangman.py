@@ -41,7 +41,7 @@ def computer():
     while True:
         try:
             length = int(input('How long do you want the word to be?   '))
-            fo = open ("words.txt" , "r")
+            fo = open ("appFiles/words.txt", "r")
             yo = fo.readlines()
 
             ranlist = []

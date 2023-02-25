@@ -8,7 +8,7 @@ def game():
     global display_box, display, correct, letters, false, correct, bob
 
     app = App(title='Hangman', width=550, height=300)
-    app.icon = 'man.ico'
+    app.icon = 'appImg/man.ico'
 
     # Splash Page
     def desfp():
@@ -41,7 +41,7 @@ def game():
 
         try:
             length = int(choice2.value)
-            fo = open("words.txt", "r")
+            fo = open("appFiles/words.txt", "r")
             yo = fo.readlines()
             ranlist = []
             for y in range(len(yo) - 1):
